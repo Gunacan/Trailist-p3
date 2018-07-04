@@ -7,8 +7,8 @@ module.exports = {
     connection: 'postgres:///outdoor_tools' 
   },
 
-  // production: {
-  //   client: 'pg',
-  //   connection: ''
-  // }
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL
+  }
 }
